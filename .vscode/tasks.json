@@ -1,0 +1,34 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Launch-All",
+        "dependsOn": [
+          "Launch-iOS",
+          "Launch-Android",
+          "Launch-Web",
+          "Launch-MacOS"
+        ]
+      },
+      {
+        "label": "Launch-iOS",
+        "type": "shell",
+        "command": "flutter run -d 'iPhone 13' "
+      },
+      {
+        "label": "Launch-Android",
+        "type": "shell",
+        "command": "flutter run -d 'emulator-5554' "
+      },
+      {
+        "label": "Launch-Web",
+        "type": "shell",
+        "command": "flutter run -d 'Chrome' "
+      },
+      {
+        "label": "Launch-MacOS",
+        "type": "shell",
+        "command": "flutter run -d 'macOS' "
+      }
+    ]
+  }
